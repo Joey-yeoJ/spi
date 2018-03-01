@@ -47,9 +47,9 @@ rhel5 ()	{
 	# Downloading necessary Squid.conf for the corresponding OS & system architecture
 	case $vsysarch in
 			32) # 32 bit Squid configuration
-					wget -O /etc/squid/squid.conf https://raw.githubusercontent.com/hidden-refuge/squid-proxy-installer/master/spi-rhel5632.conf --no-check-certificate;;
+					wget -O /etc/squid/squid.conf https://raw.githubusercontent.com/Joey-yeoJ/spi/master/spi-rhel5632.conf --no-check-certificate;;
 			64) # 64 bit Squid configuration
-					wget -O /etc/squid/squid.conf https://raw.githubusercontent.com/hidden-refuge/squid-proxy-installer/master/spi-rhel5664.conf --no-check-certificate;;
+					wget -O /etc/squid/squid.conf https://raw.githubusercontent.com/Joey-yeoJ/spi/master/spi-rhel5664.conf --no-check-certificate;;
 	esac
 	# Creating empty blacklist.acl file for further blacklisting entries
 	touch /etc/squid/blacklist.acl
